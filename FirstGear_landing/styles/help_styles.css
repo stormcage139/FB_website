@@ -106,77 +106,7 @@ a:hover::after{
     bottom: 8px
 }
 
-
 .main-container{
-    position: relative;
-    height: 40rem;
+    height: 90rem;
     background-color: rgba(225, 56, 56, 0.8);
-}
-
-.main-container-small-info-container{
-    display: flex;
-    width: fit-content;
-    flex-direction: column;
-    color:white;
-    height: fit-content;
-    position: absolute;
-    top: 5rem;
-    left: 9rem;
-    
-}
-
-.small-info-container-title{
-    font-style: oblique;
-    font-size: 6rem;
-}
-
-.p-under-small-info-container-title{
-    font-size: 3rem;
-    font-style: oblique;
-}
-
-
-.info-container-statistics{
-    font-style: oblique;
-    display: flex;
-    font-size: 2.5rem;
-    position: absolute;
-    top: 30rem;
-    left: 6rem;
-}
-
-
-.info-container-statistics>div{
-    margin-left: 4rem;
-}
-
-
-
-.girl-in-car-container{
-    position: absolute;
-    border-radius: 5rem;
-    overflow: hidden;
-    width: 48rem;
-    left: 70rem;
-    top: 5rem;
-}
-
-.main-container-cars{
-    position: relative;
-    height: 50rem;
-    background-color: rgba(225, 56, 56, 0.8);
-}
-.main-container-cars-text{
-    font-style: oblique;
-    color: white;
-    padding-top: 10rem;
-    display: flex;
-    font-size: 4rem;
-}
-
-.main-container-cars-text > *{
-    margin-left: 2rem;
-    padding-left: 1rem;
-
-    padding-right: 1rem;
 }
