@@ -160,7 +160,9 @@ a:hover::after{
     left: 70rem;
     top: 5rem;
 }
-
+.current-page-tag-a::after{
+    background-color: var(--nav-bar-bg-color);
+}
 .main-container-cars{
     position: relative;
     height: 50rem;

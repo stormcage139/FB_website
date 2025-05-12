@@ -28,7 +28,9 @@ a::after{
 a:hover::after{
     background-color: rgb(141, 141, 141);
 }
-
+.current-page-tag-a::after{
+    background-color: var(--nav-bar-bg-color);
+}
 .nav-bar{
     height: 7rem;
     background-color: black;
@@ -109,4 +111,39 @@ a:hover::after{
 .main-container{
     height: 90rem;
     background-color: rgba(225, 56, 56, 0.8);
+}
+
+
+.list_adv{
+    font-style: oblique;
+    align-items: center;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.list_adv-advertisment-card{
+    position: relative;
+    border-radius: 4rem;
+    margin-top: 5rem;
+    background: linear-gradient(to right ,#FFFCFC 44%,#F9EFEF 62%,#999797 91%);
+    width: 80%;
+    height: 20rem;
+    overflow: hidden;
+}
+.use-btn{
+    border: 5px solid transparent;
+}
+.use-btn:hover{
+    cursor: pointer;
+    animation: border-change 1s infinite;
+}
+@keyframes border-change {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: rgba(225, 56, 56, 0.8);
+    }
 }
