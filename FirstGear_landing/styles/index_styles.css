@@ -1,0 +1,108 @@
+:root {
+    --nav-bar-bg-color: #D73E3E;
+  }
+  
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+a{  
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+a::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(238, 255, 236);
+    transform: scale(0,1);
+    transition: transform 0.3s;
+}
+
+a:hover::after{
+    transform: scale(1,1);
+}
+
+.nav-bar{
+    height: 7rem;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar-logo{
+    display: flex;
+    margin-left: 3rem;
+    width: 7rem;
+    height: 4rem;
+    background-color: var(--nav-bar-bg-color);
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar-logo-text{
+    color: white;
+    font-size: 3rem;
+}
+
+
+/* .nav-bar-maintext-container{} */
+
+
+.nav-bar-maintext{
+    font-style: italic;
+    display: flex;
+    color: white;
+}
+
+.nav-bar-maintext a{
+    font-size: 1.5rem;
+    
+}
+.nav-bar-maintext>*{
+    margin-left: 2rem;
+}
+
+
+.nav-bar-maintext :first-child{
+    margin-left: 0 !important; 
+}
+
+
+
+.nav-bar-accept-course-logo{
+    font-style: italic;
+    width: 10rem;
+    height: 2.7rem;
+    background-color: var(--nav-bar-bg-color);
+    margin-right: 4rem;
+    border-radius: 999999px;
+    display: flex   ;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.nav-bar-accept-course-logo a{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+
+}
+
+.nav-bar-accept-course-logo a::after{
+    width: 50%;
+    bottom: 8px
+}
+
