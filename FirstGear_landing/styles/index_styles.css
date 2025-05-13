@@ -156,9 +156,9 @@ a:hover::after{
     position: absolute;
     border-radius: 5rem;
     overflow: hidden;
-    width: 48rem;
-    left: 70rem;
-    top: 5rem;
+    width: 40%;
+    left: 58%;
+    top: 10%;
 }
 .current-page-tag-a::after{
     background-color: var(--nav-bar-bg-color);

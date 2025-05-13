@@ -126,11 +126,15 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
-    padding: 40px;
 }
 
-.left, .right {
-    width: 48%;
+.left{
+    width: 40%;
+    padding: 2%;
+}
+.right{
+    width: 60%;
+    padding-right: 2%;
 }
 
 h1, h2 {
@@ -155,21 +159,24 @@ h2 {
 }
 
 .years {
-    position: absolute;
-    top:33rem;
-    left: 75rem;
+    
+    position: relative;
     font-size: 6rem !important;
     font-style: italic;
     font-weight: 100;
     margin: 0;
+    text-align: center;
 }
 
 .slogan {
-    color: #99d0ff;
+    -webkit-text-stroke: 1px #000000; /* Толщина и цвет обводки */
+    text-stroke: 1px #000000; /* те же значения для браузеров, которые не используют движок WebKit.*/
+    padding-left: 10%;
+    color: white;
     font-style: italic;
-    font-size: 18px;
+    font-size: 2rem !important;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 1rem;
 }
 
 .car {
