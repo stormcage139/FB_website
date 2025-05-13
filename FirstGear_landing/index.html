@@ -30,12 +30,23 @@
         </div>
         <div class="nav-bar-accept-course">
             <div class="nav-bar-accept-course-logo">
-                <a href="sign_in.html">Записаться</a>
+                <button id="call-btn" onclick="write_to_lesson()">Записаться</button>
             </div>
         </div>
     </div>
 </header>
 <body>
+    <div class="from-main-container" id="forma">
+        <div class="form-container">
+            <h1 style="text-align: center;font-size: 2.5rem;">Запишитесь всего <br>по одному клику</h1>
+            <input class="form-container-field" placeholder="Ваше имя">
+            <input class="form-container-field" placeholder="+ 7 (___) ___-__-__"></input>
+            <div class="nav-bar-accept-course-logo" style="margin: 0;margin-top: 2rem;width: 12rem;">
+                <a href="" style="font-size: 1.5rem;">Записаться</a>
+            </div>
+            <p style="margin-top: 3rem;font-size: 1rem;font-weight: 100;">Нажимая на кнопку, вы соглашаетесь с Политикой конфиденциальности</p>
+        </div>
+    </div>
     <div class="main-container">
         <div class="main-container-small-info-container">
             <div class="small-info-container-title">
@@ -97,4 +108,5 @@
         </div>
     </footer>
 </body>
+    <script src="scripts/main.js"></script>
 </html>
