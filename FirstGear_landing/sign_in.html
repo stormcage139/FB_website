@@ -9,7 +9,7 @@
 <header>
     <div class="nav-bar">
         <div class="nav-bar-logo">
-            <svg width="150px" height="160px" viewBox="0 0 150 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="120px" height="160px" viewBox="0 0 150 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="150" height="80" rx="23" fill="#D73E3E"/>
                 <path d="M112.997 41.0288C113.068 46.5435 111.885 51.9326 109.637 56.3241C107.389 60.7156 104.209 63.8524 100.612 65.227C97.0145 66.6016 93.2099 66.1335 89.8139 63.8984C86.4179 61.6633 83.6291 57.7921 81.899 52.9112C80.1688 48.0302 79.5985 42.4252 80.2803 37.0032C80.9621 31.5812 82.8561 26.6594 85.6559 23.0344C88.4556 19.4093 91.9972 17.2931 95.7076 17.0283C99.418 16.7634 103.08 18.3653 106.101 21.5748L103.299 27.3897C101.16 25.1168 98.5664 23.9824 95.9389 24.17C93.3113 24.3575 90.8032 25.8562 88.8206 28.4233C86.8379 30.9904 85.4966 34.4758 85.0138 38.3155C84.5309 42.1552 84.9348 46.1245 86.1601 49.581C87.3853 53.0375 89.3602 55.779 91.7651 57.3618C94.1701 58.9446 96.8644 59.2761 99.412 58.3027C101.96 57.3292 104.211 55.1078 105.803 51.9979C107.395 48.888 108.051 44.9341 108 41.0288H112.997Z" fill="#D9D9D9"/>
                 <rect x="39" y="17" width="11" height="49" fill="#D9D9D9"/>
@@ -49,6 +49,20 @@
     </div>
 </header>
 <body>
+    <div class="from-main-container" id="forma" style="color: black;">
+        <form class="form-container">
+          <h1 style="text-align: center;font-size: 2.5rem;">Запишитесь всего <br>по одному клику</h1>
+          <h2 id="form-submit-succes" style="text-align: center;display: none;color: green;">Вы успешно записались!</h2>
+          <input id="form-file-name" class="form-container-field" placeholder="Ваше имя">
+          <input id="form-file-phone" class="form-container-field" placeholder="+ 7 (___) ___-__-__"></input>
+          <div class="nav-bar-accept-course-logo" style="margin: 0;margin-top: 2rem;width: 12rem;">
+            <button id="give-form-response" href=""
+              style="font-size: 1.5rem;width: 100%;height: 100%;background-color: #D73E3E;">Записаться</button>
+          </div>
+          <p style="margin-top: 3rem;font-size: 1rem;font-weight: 100;">Нажимая на кнопку, вы соглашаетесь с Политикой
+            конфиденциальности</p>
+        </form>
+      </div>
     <div class="main-container">
         <div class="form-container">
             <h1 style="text-align: center;font-size: 2.5rem;">Запишитесь всего <br>по одному клику</h1>
@@ -63,22 +77,35 @@
     <footer>
         <div class="nav-bar" style="background-color: rgba(102, 102, 102, 1);">
             <div class="nav-bar-logo">
-                <p class="nav-bar-logo-text">FG</p>
+                <svg width="120px" height="100px" viewBox="0 0 150 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="150" height="80" rx="23" fill="#D73E3E"/>
+                    <path d="M112.997 41.0288C113.068 46.5435 111.885 51.9326 109.637 56.3241C107.389 60.7156 104.209 63.8524 100.612 65.227C97.0145 66.6016 93.2099 66.1335 89.8139 63.8984C86.4179 61.6633 83.6291 57.7921 81.899 52.9112C80.1688 48.0302 79.5985 42.4252 80.2803 37.0032C80.9621 31.5812 82.8561 26.6594 85.6559 23.0344C88.4556 19.4093 91.9972 17.2931 95.7076 17.0283C99.418 16.7634 103.08 18.3653 106.101 21.5748L103.299 27.3897C101.16 25.1168 98.5664 23.9824 95.9389 24.17C93.3113 24.3575 90.8032 25.8562 88.8206 28.4233C86.8379 30.9904 85.4966 34.4758 85.0138 38.3155C84.5309 42.1552 84.9348 46.1245 86.1601 49.581C87.3853 53.0375 89.3602 55.779 91.7651 57.3618C94.1701 58.9446 96.8644 59.2761 99.412 58.3027C101.96 57.3292 104.211 55.1078 105.803 51.9979C107.395 48.888 108.051 44.9341 108 41.0288H112.997Z" fill="#D9D9D9"/>
+                    <rect x="39" y="17" width="11" height="49" fill="#D9D9D9"/>
+                    <rect x="50" y="17" width="22" height="8" fill="#D9D9D9"/>
+                    <rect x="50" y="38" width="15" height="6" fill="#D9D9D9"/>
+                    <rect x="35" y="41" width="4" height="2" fill="#D9D9D9"/>
+                    <rect x="50" y="29" width="4" height="2" fill="#D9D9D9"/>
+                    <rect x="35" y="55" width="4" height="2" fill="#D9D9D9"/>
+                    <rect x="50" y="55" width="4" height="2" fill="#D9D9D9"/>
+                    <rect x="35" y="29" width="4" height="2" fill="#D9D9D9"/>
+                    <rect x="99" y="41" width="9" height="3" fill="#D9D9D9"/>
+                </svg>
             </div>
             <div class="nav-bar-maintext-container">
                 <div class="nav-bar-maintext">
                 
-                    <p>© 2002-2025 Учебный центр First Gear</p>
+                    <p style="font-size: 1.5rem;">© 2002-2025 Учебный центр First Gear</p>
                 </div>
             </div>
             <div style="text-align: center;position: relative;top: -0.5rem;">
                 <p>По всем вопросам можете <br>обращаться по телефону: <br>
-                    8 800 620 63 83</p>
-                <img src="icons/vk_5968835 1.png"  style="width: 32px;" alt="">
-                <img src="icons/image 1.png" alt=""  style="width: 32px;">
-                <img src="icons/odnoklassniki_4494653 1.png" alt=""  style="width: 32px;">
+                    8-800-620-63-83</p>
+                <a href="#" class="no-after-a"><img src="icons/vk_5968835 1.png"  style="width: 32px;" alt=""></a>
+                <a href="#" class="no-after-a"><img src="icons/image 1.png" alt=""  style="width: 32px;"></a>
+                <a href="#" class="no-after-a"><img src="icons/odnoklassniki_4494653 1.png" alt=""  style="width: 32px;"></a>
             </div>
         </div>
     </footer>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

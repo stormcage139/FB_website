@@ -5,6 +5,9 @@ let menuOpenElement = document.getElementById("call-btn")
 
 let giveFormResnponceBtnElement = document.getElementById("give-form-response")
 
+let helppage_btnElement = document.getElementsByClassName("use-btn")
+console.log(helppage_btnElement)
+
 let menuOpenedStatus = false
 menuOpenElement.addEventListener("click",(e) =>{
     if (main_form_containerElement.style.visibility === "" || main_form_containerElement.style.visibility === "hidden" ) {
@@ -45,12 +48,14 @@ giveFormResnponceBtnElement.addEventListener("click",(event) =>{
     if (!phoneRegex.test(inputPhoneElement.value.trim())) {
         formSubmitStatus.innerText = "Номер телефона должен быть в формате +7XXXXXXXXXX (всего 12 символов).";
         formSubmitStatus.style.color = "red"
+        formSubmitStatus.style.display = "block";
         return;
       }
     
       if (inputNameElement.value.trim() === "") {
         formSubmitStatus.style.color = "red"
         formSubmitStatus.innerText = "Пожалуйста, введите имя.";
+        formSubmitStatus.style.display = "block";
         return;
       }
     
@@ -58,8 +63,28 @@ giveFormResnponceBtnElement.addEventListener("click",(event) =>{
         formSubmitStatus.innerText = "Все ок!!";
         formSubmitStatus.style.color = "green"
     }
-    formSubmitStatus.style.visibility = "visible"
+    console.log(formSubmitStatus.style.display )
+    formSubmitStatus.style.display = "block";
     
+})
+
+let menuOpenElement1 = document.getElementById("call-btn1")
+let menuOpenElement2 = document.getElementById("call-btn2")
+
+menuOpenElement1.addEventListener("click",(e) =>{
+    if (main_form_containerElement.style.visibility === "" || main_form_containerElement.style.visibility === "hidden" ) {
+        console.log(main_form_containerElement.style.visibility)
+        main_form_containerElement.style.visibility = "visible";
+        main_form_containerElement.classList.add("shown");
+        document.body.style.overflow = "hidden"
+        menuOpenedStatus = true
+      } else {
+        menuOpenedStatus = false
+        console.log(main_form_containerElement.style.visibility)
+        main_form_containerElement.style.visibility = "hidden";
+        main_form_containerElement.classList.remove("shown");
+        document.body.style.overflow = ""
+      }
 })
 
 // function write_to_lesson(){    
